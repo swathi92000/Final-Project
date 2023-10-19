@@ -1,0 +1,116 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #232f3e;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sliding Tiles section styles */
+.sliding-tiles {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.sliding-tiles h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tiles-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+}
+
+.tile {
+    flex: 0 0 auto;
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    scroll-snap-align: start;
+}
+
+.tile img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tile h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.tile p {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Category Tiles section styles */
+.category-tiles {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.category-tiles h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-container {
+    display: flex;
+    gap: 20px;
+}
+
+.category-tile {
+    flex: 0 0 auto;
+    width: calc(25% - 20px); /* Adjust the width as needed */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.category-tile img {
+    max-width: 100%;
+    height: auto;
+}
+
+.category-tile h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.tile.active {
+    display: block; /* or any other styles to make it visible */
+}
+
+

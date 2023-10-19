@@ -1,0 +1,153 @@
+
+        /* Custom CSS for modernization */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #232f3e;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-input {
+            width: 70%;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+
+        .search-btn {
+            background-color: #febd69;
+            color: #232f3e;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-description {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .recipe {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .ingredient-table {
+            margin-top: 20px;
+        }
+
+        .total-cost {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .table-center {
+            margin: 0 auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .instructions {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .step {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sub-step {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            color: #e74c3c;
+        }
+
+        .note {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .title {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #FF9900; /* Amazon orange color */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .title h1 {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .title ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            display: inline-block;
+            border-bottom: 2px solid #FF9900; /* Amazon orange color */
+        }
+        /* Add this CSS in your style.css file or within a <style> tag in your HTML */
+.suggestion-list {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #301414;
+}
+
+        

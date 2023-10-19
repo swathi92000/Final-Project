@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS and JavaScript files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="fun.js"></script>
+    <title>Your Website</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="title">
+                <h1>
+                    <ul>CookEasy</ul>
+                </h1>
+            </div>
+            <div class="search-bar">
+                <input class="search-input" type="search" placeholder="Search...">
+                <button class="search-btn" type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Ingredients:</h2>
+        <div align="center">
+            <label for="peopleCount">Number of Serving(No. of people):</label>
+            <input type="number" id="peopleCount" min="1" value="1" oninput="updateIngredients()">
+        </div>
+        <div class="table-responsive ingredient-table">
+            <table class="table table-bordered">
+            <!-- Ingredient table content here -->
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="ingredientList">
+                <tr>
+                    <td>Basmati Rice</td>
+                    <td><span id="riceQuantity">2</span> cups</td>
+                    <td>$<span id="ricePrice">2.00</span></td>
+                    <td><button onclick="removeIngredient(this, 'rice')">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Chicken</td>
+                    <td><span id="chickenQuantity">500</span>g</td>
+                    <td>$<span id="chickenPrice">5.00</span></td>
+                    <td><button onclick="removeIngredient(this, 'chicken')">Remove</button></td>
+                </tr>
+                    <tr>
+                    <td>Yogurt</td>
+                    <td><span id="yogurtQuantity">1/2</span> cup</td>
+                    <td>$<span id="yogurtPrice">1.50</span></td>
+                    <td><button onclick="removeIngredient(this, 'yogurt')">Remove</button></td>
+                    </tr>
+                <!-- ... (other ingredients with quantities, prices, and remove buttons) ... -->
+                </tbody>
+            </table>
+        </div>
+        <div class="total-cost">
+        Total Cost: $<span id="totalCost">8.50</span>
+        </div>
+        <div class="payment-button">
+            <a href="#" class="btn btn-primary btn-lg rounded-circle" data-toggle="modal" data-target="#orderPlacedModal">
+                Pay Now
+            </a>
+        </div>
+        
+    </div>
+<!-- Rest of your website content goes here -->
+<!-- Modal -->
+<div class="modal fade" id="orderPlacedModal" tabindex="-1" role="dialog" aria-labelledby="orderPlacedModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderPlacedModalLabel">Order Placed</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Your order has been successfully placed.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
